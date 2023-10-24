@@ -6,20 +6,23 @@ function pularLinha () {
 		document.write("<br><br>");
 	}
 
+
 	function mostra (frase) {
 		document.write(frase);
+		pularLinha();
+	}
 
-}
 
-var ano = 2025;
+	function calculaImc(peso, altura) {
+		var imc = peso / (altura * altura);
+		return imc;
+	}
 
-mostra("Karla tem " + (ano - 1994) + " anos");
-pularLinha();
+	
+	var imcKarla = calculaImc(54, 1.53);
+	var imcLuke = calculaImc(70, 1.70);
 
-mostra("Maria tem " + (ano - 1960) + " anos");
-pularLinha();
-
-ano = 2022;
-mostra("Marcos tem " + (ano - 1965) + " anos");
+	mostra("O imc de Karla é " + imcKarla);
+	mostra("O imc de Luke é " + imcLuke);
 
 </script>
