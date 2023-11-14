@@ -2,16 +2,12 @@
 
 <script>
 
-    function pulaLinha() {
+function mostra(frase) {
+        document.write(frase);
         document.write("<br><br>");
 }
 
-    function mostra(frase) {
-        document.write(frase);
-        pulaLinha();
-}
-
-var numeroPensado = 5;
+var numeroPensado = Math.round(Math.random() * 100);
 var chute = parseInt(prompt("digite seu chute!"));
 
 if(chute == numeroPensado) {
