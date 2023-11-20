@@ -7,13 +7,14 @@ function mostra(frase) {
         document.write("<br><br>");
 }
 
+var limite = parseInt(prompt("Entre com a data limite."));
 var anoCopa = 1930;
 
-while(anoCopa <= 2023) {
-    alert("Teve copa em " + anoCopa);
+while(anoCopa <= limite) {
+    mostra("Teve copa em " + anoCopa);
     anoCopa = anoCopa + 4;
 }
 
-alert("FIM");
+mostra("FIM");
 
 </script>
