@@ -2,12 +2,24 @@
 
 <script>
 
-    var idadeKarla = 29;
-	var idadeMaria = 63;
-	var idadeMarcos = 57;
+function mostra(frase) {
+            document.write(frase);
+            document.write("<br><br>");
+    }
 
-	var media = (idadeMarcos + idadeKarla + idadeMaria)/3;
-	document.write("A média das idades é " + Math.round(media));
 
+var totalFamiliares = parseInt(prompt("Quantidade de familiares?"));
+var numero = 1;
+var totalIdades = 0;
+
+while (numero <= totalFamiliares) {
+    var idade = parseInt(prompt("Informe a idade do familiar:"));
+    totalIdades = totalIdades + idade;
+    numero++;
+}
+
+var mediaIdades = totalIdades/totalFamiliares;
+mostra("A média das idades dos familiares é de " + mediaIdades);
+mostra("FIM");
 
 </script>
