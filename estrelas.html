@@ -2,14 +2,13 @@
 
 <script>
 
-function mostra(frase) {
-        document.write(frase);
-        document.write("<br><br>");
-}
-
 for (var linha =1; linha <= 3; linha++) {
-        mostra("**********");
-
+        
+        for (var coluna = 1; coluna < 10; coluna++) {
+                document.write("*");
+        }
+        
+        document.write("<br>");
 }
 
 </script>
